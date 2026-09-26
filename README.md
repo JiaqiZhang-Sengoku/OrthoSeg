@@ -3,7 +3,8 @@
 <p align="center">
   Kai Han, Jiaqi Zhang, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Guangquan Zhou, Yang Chen, Zhe Liu
 </p>
-# 📌 Abstract
+
+## 📌 Abstract
 
 Medical image segmentation is vital for clinical diagnosis, lesion localization, treatment planning, and efficacy evaluation. However, traditional models struggle to maintain consistent performance across modalities due to significant variations in textures and imaging principles. To address this challenge, we propose OrthoSeg, a domain-agnostic framework for general medical image segmentation. By orthogonally disentangling anatomical structures from textures, OrthoSeg removes domain-specific interference to capture consistent representations. Specifically, we first design a mutual information-based module to disentangle latent representations, separating domain-agnostic structures from domain-specific textures for effective noise suppression. Second, we enforce spatial geometric consistency via equivariance and invariance penalties to reduce ambiguity and enhance boundaries. Finally, cross-scale topological aggregation is proposed to address lesion scale variations, dynamically adjusting receptive fields and reconstructing target anatomies. OrthoSeg outperforms state-of-the-art methods across seven source and eight unseen datasets in six modalities. It mitigates domain-specific noise and demonstrates promising generalization to unseen domains, taking a step towards robust, domain-agnostic medical image segmentation.
 
