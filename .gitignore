@@ -1,0 +1,50 @@
+# Python and packaging
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# Local tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+.idea/
+.vscode/
+
+# Private datasets and generated experiment artifacts
+data/
+checkpoints/
+weights/
+runs/
+outputs/
+logs/
+# Retain indexed CSVs while keeping any later raw images out of Git.
+/Datasets/**/images/
+/Datasets/**/masks/
+/Datasets/**/image/
+/Datasets/**/mask/
+/Datasets/**/stage1_train/
+/Datasets/**/*.png
+/Datasets/**/*.jpg
+/Datasets/**/*.jpeg
+/Datasets/**/*.bmp
+/Datasets/**/*.tif
+/Datasets/**/*.tiff
+/Datasets/**/*.dcm
+/Datasets/**/*.nii
+/Datasets/**/*.nii.gz
+/Datasets/**/*.npy
+/Datasets/**/*.npz
+*.pt
+*.pth
+*.ckpt
+
+# Operating system files
+.DS_Store
+Thumbs.db

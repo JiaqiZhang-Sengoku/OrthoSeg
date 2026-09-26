@@ -1,0 +1,35 @@
+{
+  "data": {
+    "indexed_datasets": {
+      "train": "ISIC2018",
+      "val": "ISIC2018",
+      "test": "PH2"
+    },
+    "indexed_data_root": "../data/indexed",
+    "indexed_metadata_root": "../Datasets/BioMedicalDataset",
+    "task": "binary",
+    "image_size": 352,
+    "spacing": null
+  },
+  "model": {
+    "in_channels": 3,
+    "num_classes": 1,
+    "widths": [16, 32, 64, 128],
+    "latent_dim": 256,
+    "num_experts": 4
+  },
+  "train": {
+    "epochs": 200,
+    "batch_size": 16,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "aux_lr": 0.0001,
+    "alpha": 0.3,
+    "beta": 1.0,
+    "tau": 1.0,
+    "gamma": 0.9,
+    "seed": 42,
+    "num_workers": 0,
+    "output_dir": "../runs/example_indexed_isic_to_ph2"
+  }
+}
